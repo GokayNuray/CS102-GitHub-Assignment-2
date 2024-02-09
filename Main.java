@@ -122,4 +122,35 @@ public class Main {
 
         return evenSum;
     
+    }
+
+    // this method will find the maximum element of the array.
+    public static int findMax(int [] givenArray) {
+
+        int max = givenArray[0]; // Assume the first element as the maximum
+
+        // Iterate through the array to find the maximum element
+        for (int i = 1; i < givenArray.length; i++) {
+            if (givenArray[i] > max) {
+                max = givenArray[i];
+            }
+        }
+
+        return max;
+    }
+
+    // this method will find the minimum element of the array
+    public static int findMin(int[] givenArray) {
+     
+        int min = givenArray[0]; // Assume the first element as the minimum
+
+        // Iterate through the array to find the minimum element
+        for (int i = 1; i < givenArray.length; i++) {
+            if (givenArray[i] < min) {
+                min = givenArray[i];
+            }
+        }
+
+        return min;
+    }
 }
